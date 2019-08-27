@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJw-db-3YR">
-                                <rect key="frame" x="252" y="651" width="88" height="30"/>
+                                <rect key="frame" x="252" y="550" width="88" height="30"/>
                                 <state key="normal" title="segunda tela">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -36,12 +37,34 @@
                                     <segue destination="2ZK-O3-PWY" kind="show" id="msc-Eo-HEo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQc-JP-APB">
+                                <rect key="frame" x="135.5" y="340" width="143" height="30"/>
+                                <state key="normal" title="Cancelar Notificação">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelarNotificacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJH-IY-Ekf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-eX-hKU">
+                                <rect key="frame" x="147" y="440" width="120" height="30"/>
+                                <state key="normal" title="Listar Notificação">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="listarNotificacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDO-v3-sG1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Xmz-eX-hKU" firstAttribute="top" secondItem="IQc-JP-APB" secondAttribute="bottom" constant="70" id="6gt-Bp-Ahg"/>
+                            <constraint firstItem="IQc-JP-APB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOe-nt-lia"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gJw-db-3YR" secondAttribute="trailing" constant="74" id="EDF-Yf-1CV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gJw-db-3YR" secondAttribute="bottom" constant="181" id="awH-cq-yTA"/>
+                            <constraint firstItem="Xmz-eX-hKU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a9S-n0-fgf"/>
+                            <constraint firstItem="gJw-db-3YR" firstAttribute="top" secondItem="Xmz-eX-hKU" secondAttribute="bottom" constant="80" id="f8m-S0-xwY"/>
                             <constraint firstItem="chJ-zO-KCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pB9-LI-tve"/>
+                            <constraint firstItem="IQc-JP-APB" firstAttribute="top" secondItem="chJ-zO-KCz" secondAttribute="bottom" constant="85" id="zgY-iI-Mgr"/>
                             <constraint firstItem="chJ-zO-KCz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="181" id="zqf-di-cZZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="146" y="136"/>
         </scene>
         <!--Segunda Tela View Controller-->
         <scene sceneID="SIj-f5-J9E">
@@ -85,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfi-7d-M7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="23"/>
+            <point key="canvasLocation" x="970" y="136"/>
         </scene>
     </scenes>
 </document>
